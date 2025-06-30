@@ -1,0 +1,52 @@
+<title>角色資料表</title>
+<table class="profile-table">
+  <tr>
+    <td class="profile-header">暱稱</td>
+    <td>{{ user?.userName }}</td>
+    <td rowspan="3" colspan="2" style="text-align:center;">
+      <img src='assets/img/01.png' class="character-image" alt="角色圖片">
+    </td>
+  </tr>
+  <tr>
+    <td class="profile-header">角色</td>
+    <td>{{ user?.characterName }}</td>
+  </tr>
+  <tr>
+    <td class="profile-header">等級</td>
+    <td>{{ user?.level }}</td>
+
+  </tr>
+  <tr>
+    <td class="stat-name">HP</td>
+    <td>{{ user?.hp }}</td>
+    <td class="stat-name">經驗值</td>
+    <td>{{ user?.xp }}</td>
+
+  </tr>
+  <tr>
+    <td class="stat-name">防禦</td>
+    <td>{{ user?.defValue }}</td>
+    <td class="stat-name">攻擊</td>
+    <td>{{ user?.strValue }}</td>
+
+  </tr>
+  <tr>
+    <td class="stat-name">敏捷</td>
+    <td>{{ user?.dexValue }}</td>
+    <td class="stat-name">體力</td>
+    <td>{{ user?.staValue }}</td>
+
+  </tr>
+  <tr>
+    <td class="stat-name">反應速度</td>
+    <td>{{ user?.spdValue }}</td>
+    <td class="stat-name">技巧</td>
+    <td>{{ user?.tacValue }}</td>
+  </tr>
+  <tr>
+    <td class="stat-name">智力</td>
+    <td>{{ user?.intValue }}</td>
+    <td class="stat-name">幸運</td>
+    <td>{{ user?.lckValue }}</td>
+  </tr>
+</table>

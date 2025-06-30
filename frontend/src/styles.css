@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+/* 顏色設定 */
+:root {
+  --primary-color: #00B8B8;
+  --text-color: white;
+  --active-bg: white;
+  --active-text: #00B8B8;
+}

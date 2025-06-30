@@ -1,0 +1,33 @@
+
+    <nav class="custom-navbar">
+        <div class="nav-left">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="logo">
+                Aincrad
+            </a>
+
+            <!-- 主選單項目 -->
+            <div class="nav-links">
+                <a routerLink="/user" routerLinkActive="active">玩家列表</a>
+                <a routerLink="/boss" routerLinkActive="active">交易行</a>
+                <a routerLink="/rank" routerLinkActive="active">鍛造</a>
+                <a routerLink="/login" routerLinkActive="active">重生</a>
+                <a routerLink="/report" routerLinkActive="active">戰報</a>
+            </div>
+
+
+            
+        </div>
+
+        <div class="nav-right">
+            <button class="logout-button" (click)="logout()">登出</button>
+        </div>
+
+
+    </nav>
+
+
+    <main class="main-content">
+        <router-outlet></router-outlet> 
+    </main>
+
+

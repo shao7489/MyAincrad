@@ -1,0 +1,22 @@
+<div class="login-container">
+    <h2>登入</h2>
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+        <div class="form-group">
+            <div class="label-with-error">
+                <label for="userEmail">電子郵件</label>
+                <span class="error-text" *ngIf="loginFailed">郵件或密碼錯誤</span>
+            </div>
+            <input type="text" id="userEmail" name="userEmail" [(ngModel)]="userEmail" required />
+        </div>
+
+        <div class="form-group">
+            <label for="userPassword">密碼</label>
+            <input type="Password" id="userPassword" name="userPassword" [(ngModel)]="userPassword" required />
+        </div>
+
+        <button type="submit" [disabled]="!loginForm.form.valid">登入</button>
+    </form>
+</div>    
+
+
+

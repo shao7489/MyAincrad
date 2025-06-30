@@ -1,0 +1,89 @@
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button {
+  background-color: var(--primary-color); /* 跟導覽列主色一致 */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+
+/* 導覽列主體 */
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;  /* 左右區塊左右拉開 */
+  align-items: center;             /* 垂直置中 */
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+}
+
+/* 左側區塊：logo  */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* LOGO 樣式（也是選單項目） */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+
+/* LOGO 如果被選中（在首頁）也要反轉顏色 ??不起作用?? */
+.logo.active {
+  background-color: var(--active-bg);
+  color: var(--active-text);
+}
+
+
+
+/* 導覽連結（桌機預設顯示） */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.nav-links a.active {
+  background-color: var(--active-bg);
+  color: var(--active-text);
+  font-weight: bold;
+}
+
+/* 響應式，自動換*/
+@media (max-width: 992px) {
+  .custom-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+.main-content {
+  padding: 20px;
+}
