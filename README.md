@@ -18,6 +18,7 @@
 
 ```bash
 ./mvnw spring-boot:run
+
 後端預設埠號：http://localhost:8080
 
 設定檔位置：src/main/resources/application.properties
@@ -28,6 +29,7 @@
 cd frontend
 npm install
 ng serve
+
 前端預設埠號：http://localhost:4200
 ```
 
@@ -35,8 +37,8 @@ ng serve
 
 ## 使用技術
 ```bash
-| 區域　　　|             技術           　　 |
-| 　　　　　| ------------------------------ |
+| 　區域　　|             技術           　　 |
+| -------- | ------------------------------ |
 | 前端　　　| Angular, TypeScript, HTML, CSS |
 | 後端　　　| Spring Boot, Java, RESTful API |
 | 建構工具　| Maven                          |
