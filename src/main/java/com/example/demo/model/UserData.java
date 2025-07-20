@@ -1,6 +1,6 @@
 package com.example.demo.model;
 
-import com.example.demo.service.CharacterService;
+
 
 import jakarta.persistence.*;
 
